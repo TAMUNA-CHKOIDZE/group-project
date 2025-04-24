@@ -1,1 +1,13 @@
 // styles
+// Partial Files
+@import "./mixin";
+@import "./reset";
+@import "./variable";
+
+// import font
+@import url('https://free.bboxtype.com/embedfonts/?family=FiraGO:400,700');
+
+// Define a font for a page
+body {
+    font-family: $font;
+  }
