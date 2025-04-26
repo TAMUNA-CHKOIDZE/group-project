@@ -1,3 +1,22 @@
 // variables
-// font 
-$font: 'FiraGO', sans-serif;
+// font
+$font: "FiraGO", sans-serif;
+// colors
+$primary-color: #ff3b30;
+$black-color: #000000;
+$dark-grey: #4a5468;
+$low-dark-grey: #e2e7f0;
+$light-grey: #edf0f7;
+$background-gray: #f9fafc;
+$white: #ffffff;
+// shadow 
+$big-shadow: 0px 0px 40px 0px #0000001F;
+$small-shadow: 0px 0px 20px 0px #0000001A;
+// radius
+$radius12: 12px;
+$radius10: 10px;
+$radius8: 8px;
+// hover
+// header-ის სოც. ქსელების, buregr-ისა და search-ის ჰოვერისთვის, თუმცა search როცა პატარავდება მაშინ
+$icon-hover-bg: darken($light-grey, 5%);
+
