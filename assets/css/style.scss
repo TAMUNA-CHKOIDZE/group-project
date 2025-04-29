@@ -13,3 +13,104 @@ body {
   font-family: $font;
 }
 
+// header -----------------------
+.header {
+  @include outer-container(1920px);
+  position: relative;
+
+  // header top
+  &__top {
+    @include inner-container(1312px);
+    @include flex(space-between, center, row, 0, 0);
+    padding-block: 16px;
+  }
+  // social-icons
+  &__social-icons {
+    @include flex(center, center, row, 8px, 0);
+  }
+  &__social-link {
+    @include flex(center, center, row, 0, 0);
+    width: 40px;
+    height: 40px;
+    border-radius: $radius8;
+    background: $light-grey;
+    transition: 0.3s;
+
+    &:hover {
+      background: $icon-hover-bg;
+    }
+  }
+  // logo
+  &__logo {
+    color: $primary-color;
+    @include font-style(600, 28px, 34px, 0.36px);
+    cursor: pointer;
+  }
+
+  &__search {
+    background: $light-grey;
+    width: 304px;
+    height: 48px;
+    padding-inline: 16px 4px;
+    border-radius: $radius10;
+    @include flex(space-between, center, row, 0, 0);
+  }
+
+  &__search-input {
+    background: transparent;
+    width: 70%;
+    height: 100%;
+    border: none;
+    outline: none;
+    &::placeholder {
+      color: $dark-grey;
+      @include font-style(400, 16px, 20px, -0.24px);
+    }
+  }
+
+  &__search-button {
+    width: 40px;
+    height: 40px;
+    border-radius: $radius8;
+    background: $white;
+    border: none;
+  }
+
+  &__search-icon--mobile,
+  &__burger-button {
+    display: none;
+  }
+
+  // header bottom -----
+  &__bottom {
+    background: $low-dark-grey;
+    padding-block: 16px;
+  }
+  &__nav {
+    @include inner-container(1312px);
+  }
+  &__nav-ul,
+  &__dropdown-content {
+    @include flex(space-between, center, row, 33.4px, 0);
+  }
+  &__nav-link--active {
+    display: none;
+  }
+  &__nav-link {
+    color: $dark-grey;
+    @include font-style(400, 16px, 20px, -0.24px);
+    transition: 0.3s;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+// slider --------------------
+
+
+// section for cards --------------
+
+
+// footer ------------------------

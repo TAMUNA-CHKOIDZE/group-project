@@ -12,22 +12,118 @@
 <body>
     <!-- header -->
     <header class="header">
-        <!-- header content -->
+        <!-- top part -->
+        <div class="header__top">
+            <!-- social icons -->
+            <ul class="header__social-icons">
+                <li class="header__social-item">
+                    <a class="header__social-link" href="https://facebook.com" target="_blank" rel="noopener">
+                        <img class="header__social-icon" src="./assets/images/header/facebook.svg" alt="Facebook">
+                    </a>
+                </li>
+                <li class="header__social-item">
+                    <a class="header__social-link" href="https://twitter.com" target="_blank" rel="noopener">
+                        <img class="header__social-icon" src="./assets/images/header/twiter.svg" alt="Twitter">
+                    </a>
+                </li>
+                <li class="header__social-item">
+                    <a class="header__social-link" href="https://instagram.com" target="_blank" rel="noopener">
+                        <img class="header__social-icon" src="./assets/images/header/instagram.svg" alt="Instagram">
+                    </a>
+                </li>
+            </ul>
+            <!-- logo  -->
+            <a href="index.html" class="header__logo">Company Logo</a>
+            <!-- search & burger -->
+            <div class="header__controls">
+                <form class="header__search" method="GET">
+                    <input type="search" class="header__search-input" name="search" placeholder="ძიება...">
+                    <button type="submit" class="header__search-button">
+                        <img src="./assets/images/header/big-search.svg" alt="Search"
+                            class="header__search-icon--desktop">
+                        <!-- header__search-icon--mobile -->
+                        <img src="./assets/images/header/small-search.svg" alt="Search"
+                            class="header__search-icon--mobile">
+                    </button>
+                </form>
+                <!-- header burger button  -->
+                <button class="header__burger-button" id="burger">
+                    <img src="./assets/images/header/menu.svg" alt="burger-menu" class="header__burger-image">
+                </button>
+            </div>
+        </div>
+        <!-- bottom part - navigation -->
+        <div class="header__bottom">
+            <nav class="header__nav">
+                <ul class="header__nav-ul">
+                    <!-- ჩვეულებრივი მენიუ -->
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">პოლიტიკა</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">საზოგადოება</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Covid-19</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">სამართალი</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">ბიზნესი & ეკონომიკა</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">კრიმინალი</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">შემთხვევა</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">მსოფლიო</a>
+                    </li>
+                    <!-- dropdown ღილაკი და submenu -->
+                    <li class="header__nav-item header__nav-item--dropdown">
+                        <!-- dropdown btn -->
+                        <a href="#" class="header__nav-link--active" id="dropdown-btn">
+                            მეტი
+                            <!-- <img src="./assets/images/header/arrow-up.svg" alt="arrow-up"
+                                class="header__nav-link--arrow-up"> -->
+                            <img src="./assets/images/header/arrow-down.svg" alt="arrow-down"
+                                class="header__nav-link--arrow-down">
+                        </a>
+                        <ul id="dropdown" class="header__dropdown-content">
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">სპორტი</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">რელიგია</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">ხელოვნება</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </section>
     </header>
-    <!-- main -->
-    <main class="main">
-        <!-- slider -->
-        <section class="slider">
-            <!-- slider content -->
-        </section>
-        <!-- section -->
-        <section class="section">
-            <!-- section content -->
-        </section>
-    </main>
+    <!-- slider -->
+    <section class="slider">
+        <!-- slider content -->
+    </section>
+    <!-- section -->
+    <section class="cards">
+        <!-- section content -->
+    </section>
     <!-- footer -->
     <footer class="footer">
         <!-- footer content -->
     </footer>
+
+
+
+    <script src="./assets/main.js"></script>
 </body>
+
 </html>

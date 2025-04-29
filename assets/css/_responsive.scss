@@ -1,1 +1,172 @@
 // Responsive for all resolutions
+@import "./mixin";
+@import "./variable";
+
+// Medium desktop --------------------------------
+@media (max-width: 1240px) {
+  // header -----------
+  .header {
+    &__top {
+      @include inner-container(1128px !important);
+    }
+    &__search {
+      width: 220px !important;
+    }
+    &__nav {
+      @include inner-container(1128px !important);
+    }
+    &__nav-link--active {
+      display: block !important;
+      color: $dark-grey;
+      @include font-style(400, 16px, 20px, -0.24px);
+      @include flex(center, center, row, 8px, 0);
+    }
+
+    &__dropdown-content {
+      display: none !important;
+    }
+
+    &__dropdown-content.show {
+      display: flex !important;
+      position: absolute;
+      top: 132px;
+      right: 20px;
+      background: $white;
+      @include flex(center, flex-start, column-reverse, 0px, 24px);
+      width: 180px;
+      height: 156px;
+      border-radius: $radius8;
+      padding: 24px 16px;
+      box-shadow: $small-shadow;
+    }
+  }
+
+  // slider --------------------
+
+  // section for cards --------------
+
+  // footer ------------------------
+}
+
+//  Tablet ---------------------------------
+@media (max-width: 1024px) {
+  // header ------------
+  .header {
+    &__top {
+      @include inner-container(928px !important);
+    }
+    &__social-icons {
+      display: none !important;
+    }
+    &__logo {
+      @include font-style(600, 24px !important, 34px, 0.36px);
+    }
+    &__controls {
+      @include flex(center, center, row, 16px, 0);
+    }
+    &__search {
+      width: 216px !important;
+    }
+    &__burger-button {
+      display: block !important;
+      width: 48px;
+      height: 48px;
+      border: none;
+      border-radius: $radius8;
+      background: $light-grey;
+      transition: 0.3s;
+
+      &:hover {
+        background: $icon-hover-bg;
+      }
+    }
+    &__bottom {
+      display: none;
+    }
+    &__bottom.show {
+      display: block;
+      position: absolute;
+      width: 180px;
+      top: 80px;
+      right: 0px;
+      background: $white;
+      border-radius: $radius8;
+      padding: 24px 16px;
+      box-shadow: $small-shadow;
+    }
+    &__nav-ul {
+      @include flex(
+        center !important,
+        flex-start !important,
+        column !important,
+        0px,
+        24px !important
+      );
+    }
+    &__nav-link--active {
+      display: none !important;
+    }
+    &__dropdown-content {
+      display: flex !important;
+      @include flex(
+        center !important,
+        flex-start !important,
+        column !important,
+        0px,
+        24px !important
+      );
+    }
+  }
+
+  // slider --------------------
+
+  // section for cards --------------
+
+  // footer ------------------------
+}
+
+//  MOBILE ----------------------------------
+@media (max-width: 360px) {
+  // header ---------
+  .header {
+    &__top {
+      @include inner-container(296px !important);
+    }
+    &__controls {
+      @include flex(center, center, row, 12px !important, 0);
+      height: 40px;
+    }
+    &__search-input {
+      display: none;
+    }
+    &__search {
+      width: 40px !important;
+      height: 100% !important;
+      padding: 0 !important;
+    }
+    &__search-button {
+      width: 100% !important;
+      height: 100% !important;
+      background: $light-grey !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__search-icon--desktop {
+      display: none !important;
+    }
+    &__search-icon--mobile {
+      display: block !important;
+    }
+    &__burger-button {
+      width: 40px !important;
+      height: 100% !important;
+    }
+  }
+
+  // slider --------------------
+
+  // section for cards --------------
+
+  // footer ------------------------
+}
