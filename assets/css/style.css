@@ -436,4 +436,72 @@ body {
 }
 .header__nav-link:hover {
   color: #ff3b30;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 304px 640px 304px;
+  grid-template-rows: 244px 244px;
+  gap: 31px;
+  max-width: 1312px;
+  margin: auto;
+}
+.cards__images {
+  border-radius: 12px;
+}
+.cards .post-cards {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #4a5468;
+  margin: 16px 12px 8px 12px;
+}
+.cards .paragraphs-cards {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  margin: 8px 12px 16px 12px;
+}
+.cards__moon,
+.cards .nuclear-card,
+.cards .key-card,
+.cards .cancer-card,
+.cards .clock-card {
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1215686275);
+}
+
+.cards > .nuclear-card {
+  grid-row: span 2;
+}
+.cards > .nuclear-card .paragraph-nuclear {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.34px;
+  padding: 32px 16px;
+  border-bottom: 1px solid #edf0f7;
+}
+.cards > .nuclear-card .post-nuclear {
+  display: flex;
+  justify-content: space-between;
+  align-items: 0;
+  flex-direction: 0;
+  -moz-column-gap: 0;
+       column-gap: 0;
+  row-gap: 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  padding: 16px 17px;
+}
+.cards > .nuclear-card .post-nuclear .category-news {
+  color: #ff3b30;
+}
+.cards > .nuclear-card .post-nuclear .news-date {
+  color: #4a5468;
 }/*# sourceMappingURL=style.css.map */

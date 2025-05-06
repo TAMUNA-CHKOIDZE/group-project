@@ -109,8 +109,62 @@ body {
 
 // slider --------------------
 
-
 // section for cards --------------
 
+.cards {
+  display: grid;
+  grid-template-columns: 304px 640px 304px;
+  grid-template-rows: 244px 244px;
+  gap: 31px;
+  @include inner-container(1312px);
+
+  &__images {
+    border-radius: $radius12;
+  }
+
+  .post-cards {
+    @include font-style(400, 12px, 18px, 0.2px);
+    color: $dark-grey;
+    margin: 16px 12px 8px 12px;
+  }
+
+  .paragraphs-cards {
+    @include font-style(500, 13px, 18px, 0.2px);
+    margin: 8px 12px 16px 12px;
+  }
+  &__moon,
+  .nuclear-card,
+  .key-card,
+  .cancer-card,
+  .clock-card {
+    border-radius: $radius12;
+    background-color: $white;
+    box-shadow: $big-shadow;
+  }
+}
+
+.cards > .nuclear-card {
+  grid-row: span 2;
+
+  .paragraph-nuclear {
+    @include font-style(600, 16px, 24px, 0.34px);
+    padding: 32px 16px;
+    border-bottom: 1px solid $light-grey;
+  }
+
+  .post-nuclear {
+    @include flex(space-between, 0, 0, 0, 0);
+    @include font-style(500, 13px, 18px, 0.2px);
+    padding: 16px 17px;
+
+    .category-news {
+      color: $primary-color;
+    }
+
+    .news-date {
+      color: $dark-grey;
+    }
+  }
+}
 
 // footer ------------------------
