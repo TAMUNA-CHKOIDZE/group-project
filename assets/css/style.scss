@@ -2,7 +2,7 @@
 // Partial Files
 @import "./mixin";
 @import "./reset";
-@import "./responsive";
+// @import "./responsive";
 @import "./variable";
 
 // import font
@@ -117,8 +117,8 @@ body {
   grid-template-rows: 244px 244px;
   gap: 31px;
   @include inner-container(1312px);
-
   &__images {
+    @include image-style(304px, 150px);
     border-radius: $radius12;
   }
 
@@ -143,6 +143,10 @@ body {
   }
 
   &__nuclear {
+    &--img {
+      width: 640px;
+      height: 356px;
+    }
     grid-row: span 2;
 
     &--paragraph {
@@ -166,3 +170,5 @@ body {
     }
   }
 }
+
+@import "./responsive";
