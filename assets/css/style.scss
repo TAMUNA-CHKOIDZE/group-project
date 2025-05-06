@@ -133,38 +133,36 @@ body {
     margin: 8px 12px 16px 12px;
   }
   &__moon,
-  .nuclear-card,
-  .key-card,
-  .cancer-card,
-  .clock-card {
+  &__nuclear,
+  &__key,
+  &__cancer,
+  &__clock {
     border-radius: $radius12;
     background-color: $white;
     box-shadow: $big-shadow;
   }
-}
 
-.cards > .nuclear-card {
-  grid-row: span 2;
+  &__nuclear {
+    grid-row: span 2;
 
-  .paragraph-nuclear {
-    @include font-style(600, 16px, 24px, 0.34px);
-    padding: 32px 16px;
-    border-bottom: 1px solid $light-grey;
-  }
-
-  .post-nuclear {
-    @include flex(space-between, 0, 0, 0, 0);
-    @include font-style(500, 13px, 18px, 0.2px);
-    padding: 16px 17px;
-
-    .category-news {
-      color: $primary-color;
+    &--paragraph {
+      @include font-style(600, 16px, 24px, 0.34px);
+      padding: 32px 16px;
+      border-bottom: 1px solid $light-grey;
     }
 
-    .news-date {
-      color: $dark-grey;
+    &__post {
+      @include flex(space-between, 0, 0, 0, 0);
+      @include font-style(500, 13px, 18px, 0.2px);
+      padding: 16px 17px;
+
+      &--news {
+        color: $primary-color;
+      }
+
+      &--newsdate {
+        color: $dark-grey;
+      }
     }
   }
 }
-
-// footer ------------------------

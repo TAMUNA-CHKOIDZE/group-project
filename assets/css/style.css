@@ -464,20 +464,15 @@ body {
   letter-spacing: 0.2px;
   margin: 8px 12px 16px 12px;
 }
-.cards__moon,
-.cards .nuclear-card,
-.cards .key-card,
-.cards .cancer-card,
-.cards .clock-card {
+.cards__moon, .cards__nuclear, .cards__key, .cards__cancer, .cards__clock {
   border-radius: 12px;
   background-color: #ffffff;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1215686275);
 }
-
-.cards > .nuclear-card {
+.cards__nuclear {
   grid-row: span 2;
 }
-.cards > .nuclear-card .paragraph-nuclear {
+.cards__nuclear--paragraph {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -485,7 +480,7 @@ body {
   padding: 32px 16px;
   border-bottom: 1px solid #edf0f7;
 }
-.cards > .nuclear-card .post-nuclear {
+.cards__nuclear__post {
   display: flex;
   justify-content: space-between;
   align-items: 0;
@@ -499,9 +494,9 @@ body {
   letter-spacing: 0.2px;
   padding: 16px 17px;
 }
-.cards > .nuclear-card .post-nuclear .category-news {
+.cards__nuclear__post--news {
   color: #ff3b30;
 }
-.cards > .nuclear-card .post-nuclear .news-date {
+.cards__nuclear__post--newsdate {
   color: #4a5468;
 }/*# sourceMappingURL=style.css.map */
