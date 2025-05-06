@@ -38,3 +38,44 @@ const burgerMenu = document.querySelector(".header__bottom");
 burger.addEventListener("click", () => {
   burgerMenu.classList.toggle("show");
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".swiper", {
+    direction: "horizontal",
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+
+    on: {
+      init: function () {
+        updateFraction(this);
+      },
+      slideChange: function () {
+        updateFraction(this);
+      },
+    },
+  });
+
+  updateFraction(swiper);
+});
+
+function updateFraction(swiper) {
+  const current = swiper.realIndex + 1;
+  const total = swiper.slidesEl.querySelectorAll(
+    ".swiper-slide:not(.swiper-slide-duplicate)"
+  ).length;
+  document.querySelector(
+    ".swiper-pagination-fraction"
+  ).textContent = `${current}/${total}`;
+}
+
+
+
+
+

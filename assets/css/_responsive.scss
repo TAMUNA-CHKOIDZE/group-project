@@ -29,6 +29,7 @@
     &__dropdown-content.show {
       display: flex !important;
       position: absolute;
+      z-index: 200;
       top: 132px;
       right: 20px;
       background: $white;
@@ -42,6 +43,16 @@
   }
 
   // slider --------------------
+  .custom-slider {
+    @include inner-container(1128px !important);
+    height: 700px !important;
+    margin-block: 32px 64px !important;
+    // Content over slider
+    &__content {
+      width: 1080px !important;
+      height: 246px !important;
+    }
+  }
 
   // section for cards --------------
 
@@ -86,6 +97,7 @@
     &__bottom.show {
       display: block;
       position: absolute;
+      z-index: 200;
       width: 180px;
       top: 80px;
       right: 0px;
@@ -119,7 +131,43 @@
   }
 
   // slider --------------------
-
+  .custom-slider {
+    @include inner-container(928px !important);
+    height: 560px !important;
+    margin-block: 16px 64px !important;
+    // Content over slider
+    &__content {
+      width: 880px !important;
+      height: 158px !important;
+      padding: 24px !important;
+    }
+    // buttons block
+    &__navigation {
+      width: 137px !important;
+      height: 48px !important;
+      @include flex(
+        space-between,
+        flex-start,
+        row,
+        16px !important,
+        16px !important
+      );
+      bottom: 460px !important;
+      left: 24px;
+    }
+    &__button {
+      background: $white;
+      border-radius: $radius8;
+      width: 32px !important;
+      height: 32px !important;
+      top: 30%;
+      transform: translateY(-30%);
+    }
+    &__pagination {
+      top: 25%;
+      transform: translateY(-25%);
+    }
+  }
   // section for cards --------------
 
   // footer ------------------------
@@ -165,6 +213,42 @@
   }
 
   // slider --------------------
+  .custom-slider {
+    @include inner-container(360px !important);
+    height: 434px !important;
+    margin-block: 0px !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &__image {
+      border-radius: 0px !important;
+      height: 280px !important;
+    }
+    // Content over slider
+    &__content {
+      width: 360px !important;
+      height: 154px !important;
+      padding: 16px !important;
+      left: 0px !important;
+      bottom: 0px !important;
+      border-radius: 0px !important;
+      position: static !important;
+    }
+    &__title {
+      @include font-style(600, 16px !important, 24px !important, 0.35px);
+      margin-top: 8px !important;
+    }
+    &__navigation {
+      width: 328px !important;
+      top: 124px !important;
+      left: 50% !important;
+      transform: translate(-50%) !important;
+      background: transparent !important;
+    }
+    &__pagination {
+      display: none;
+    }
+  }
 
   // section for cards --------------
 
