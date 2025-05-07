@@ -2,7 +2,6 @@
 // Partial Files
 @import "./mixin";
 @import "./reset";
-@import "./responsive";
 @import "./variable";
 
 // import font
@@ -184,3 +183,7 @@ body {
 // section for cards --------------
 
 // footer ------------------------
+
+
+// responsive-ის იმპორტი არის ბოლოში და ამის ქვევით არ ვწერთ სტილებს 
+@import "./responsive";
