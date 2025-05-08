@@ -49,6 +49,9 @@
     gap: 24px;
     @include inner-container(1128px);
 
+    .paragraphs-cards {
+      @include font-style(500, 13px, 15px, 0.2px);
+    }
     &__images {
       @include image-style(264px, 150px);
     }
@@ -137,18 +140,40 @@
 
   // section for cards --------------
   .cards {
-    grid-template-columns: 264px 552px 264px;
+    grid-template-columns: 448px;
     gap: 24px;
-    @include inner-container(1128px);
-
+    @include inner-container(928px);
+    &__moon {
+      order: 2;
+    }
+    &__nuclear {
+      order: 1;
+    }
+    &__key {
+      order: 5;
+    }
+    &__cancer {
+      order: 4;
+    }
+    &__clock {
+      order: 3;
+    }
+    &__key {
+      order: 5;
+    }
     &__images {
-      @include image-style(264px, 150px);
+      @include image-style(448px, 194px);
     }
 
     &__nuclear {
       &--img {
-        width: 552px;
-        height: 356px;
+        width: 928px;
+        height: 372px;
+      }
+      grid-column: span 2;
+      &--paragraph {
+        @include font-style(600, 16px, 24px, 0.35px);
+        padding: 20px 16px;
       }
     }
   }
@@ -198,5 +223,40 @@
 
   // section for cards --------------
 
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include inner-container(296px);
+
+    &__moon {
+      order: 2;
+    }
+    &__nuclear {
+      order: 1;
+    }
+    &__key {
+      order: 5;
+    }
+    &__cancer {
+      order: 4;
+    }
+    &__clock {
+      order: 3;
+    }
+    &__key {
+      order: 5;
+    }
+    &__images {
+      @include image-style(328px, 140px);
+    }
+    &__nuclear {
+      &--img {
+        width: 328px;
+        height: 181px;
+      }
+    }
+  }
   // footer ------------------------
 }
