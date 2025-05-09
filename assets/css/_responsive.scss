@@ -7,28 +7,29 @@
   // header -----------
   .header {
     &__top {
-      @include inner-container(1128px !important);
+      @include inner-container(1128px);
     }
     &__search {
-      width: 220px !important;
+      width: 220px;
     }
     &__nav {
-      @include inner-container(1128px !important);
+      @include inner-container(1128px);
     }
     &__nav-link--active {
-      display: block !important;
+      display: block;
       color: $dark-grey;
       @include font-style(400, 16px, 20px, -0.24px);
       @include flex(center, center, row, 8px, 0);
     }
 
     &__dropdown-content {
-      display: none !important;
+      display: none;
     }
 
     &__dropdown-content.show {
-      display: flex !important;
+      display: flex;
       position: absolute;
+      z-index: 200;
       top: 132px;
       right: 20px;
       background: $white;
@@ -42,6 +43,16 @@
   }
 
   // slider --------------------
+  .custom-slider {
+    @include inner-container(1128px);
+    height: 700px;
+    margin-block: 32px 64px;
+    // Content over slider
+    &__content {
+      width: 1080px;
+      height: 246px;
+    }
+  }
 
   // section for cards --------------
   .cards {
@@ -71,22 +82,22 @@
   // header ------------
   .header {
     &__top {
-      @include inner-container(928px !important);
+      @include inner-container(928px);
     }
     &__social-icons {
-      display: none !important;
+      display: none;
     }
     &__logo {
-      @include font-style(600, 24px !important, 34px, 0.36px);
+      @include font-style(600, 24px, 34px, 0.36px);
     }
     &__controls {
       @include flex(center, center, row, 16px, 0);
     }
     &__search {
-      width: 216px !important;
+      width: 216px;
     }
     &__burger-button {
-      display: block !important;
+      display: block;
       width: 48px;
       height: 48px;
       border: none;
@@ -104,6 +115,7 @@
     &__bottom.show {
       display: block;
       position: absolute;
+      z-index: 200;
       width: 180px;
       top: 80px;
       right: 0px;
@@ -113,31 +125,47 @@
       box-shadow: $small-shadow;
     }
     &__nav-ul {
-      @include flex(
-        center !important,
-        flex-start !important,
-        column !important,
-        0px,
-        24px !important
-      );
+      @include flex(center, flex-start, column, 0px, 24px);
     }
     &__nav-link--active {
-      display: none !important;
+      display: none;
     }
     &__dropdown-content {
-      display: flex !important;
-      @include flex(
-        center !important,
-        flex-start !important,
-        column !important,
-        0px,
-        24px !important
-      );
+      display: flex;
+      @include flex(center, flex-start, column, 0px, 24px);
     }
   }
 
   // slider --------------------
-
+  .custom-slider {
+    @include inner-container(928px);
+    height: 560px;
+    margin-block: 16px 64px;
+    // Content over slider
+    &__content {
+      width: 880px;
+      height: 158px;
+      padding: 24px;
+    }
+    // buttons block
+    &__navigation {
+      width: 137px;
+      height: 48px;
+      @include flex(space-between, flex-start, row, 16px, 16pt);
+      bottom: 460px;
+      left: 24px;
+    }
+    &__button {
+      background: $white;
+      border-radius: $radius8;
+      width: 32px;
+      height: 32px;
+      top: 62%;
+    }
+    &__pagination {
+      top: 25%;
+    }
+  }
   // section for cards --------------
   .cards {
     grid-template-columns: 448px;
@@ -185,41 +213,77 @@
   // header ---------
   .header {
     &__top {
-      @include inner-container(296px !important);
+      @include inner-container(296px);
     }
     &__controls {
-      @include flex(center, center, row, 12px !important, 0);
+      @include flex(center, center, row, 12px, 0);
       height: 40px;
     }
     &__search-input {
       display: none;
     }
     &__search {
-      width: 40px !important;
-      height: 100% !important;
-      padding: 0 !important;
+      width: 40px;
+      height: 100%;
+      padding: 0;
     }
     &__search-button {
-      width: 100% !important;
-      height: 100% !important;
-      background: $light-grey !important;
+      width: 100%;
+      height: 100t;
+      background: $light-grey;
       display: flex;
       justify-content: center;
       align-items: center;
     }
     &__search-icon--desktop {
-      display: none !important;
+      display: none;
     }
     &__search-icon--mobile {
-      display: block !important;
+      display: block;
     }
     &__burger-button {
-      width: 40px !important;
-      height: 100% !important;
+      width: 40px;
+      height: 100%;
     }
   }
 
   // slider --------------------
+  .custom-slider {
+    @include inner-container(360px);
+    height: 434px;
+    margin-block: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &__image {
+      border-radius: 0px;
+      height: 280px;
+    }
+    // Content over slider
+    &__content {
+      width: 360px;
+      height: 154px;
+      padding: 16px;
+      left: 0px;
+      bottom: 0px;
+      border-radius: 0px;
+      position: static;
+    }
+    &__title {
+      @include font-style(600, 16px, 24px, 0.35px);
+      margin-top: 8px;
+    }
+    &__navigation {
+      width: 328px;
+      top: 124px;
+      left: 50%;
+      transform: translate(-50%);
+      background: transparent;
+    }
+    &__pagination {
+      display: none;
+    }
+  }
 
   // section for cards --------------
 

@@ -4,6 +4,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Swiper-ის სტილები -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- custom stytles -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Random design</title>
   </head>
@@ -153,8 +159,66 @@
       <!-- </section> -->
     </header>
     <!-- slider -->
-    <section class="slider">
-      <!-- slider content -->
+    <section class="swiper custom-slider">
+      <!-- Swiper wrapper -->
+      <div class="swiper-wrapper custom-slider__wrapper">
+        <!-- Individual slides -->
+        <div class="swiper-slide custom-slider__slide">
+          <img
+            class="custom-slider__image"
+            src="./assets/images/slider/slider1.jpg"
+            alt="slider"
+          />
+        </div>
+        <div class="swiper-slide custom-slider__slide">
+          <img
+            class="custom-slider__image"
+            src="./assets/images/slider/slider2.jpg"
+            alt="slider"
+          />
+        </div>
+        <div class="swiper-slide custom-slider__slide">
+          <img
+            class="custom-slider__image"
+            src="./assets/images/slider/slider3.jpg"
+            alt="slider"
+          />
+        </div>
+        <div class="swiper-slide custom-slider__slide">
+          <img
+            class="custom-slider__image"
+            src="./assets/images/slider/slider4.jpg"
+            alt="slider"
+          />
+        </div>
+      </div>
+      <!-- Content over slider -->
+      <section class="custom-slider__content">
+        <div class="custom-slider__meta">
+          <span class="custom-slider__category">პოლიტიკა</span>
+          <span class="custom-slider__separator">•</span>
+          <time class="custom-slider__date" datetime="2022-04-18"
+            >18.04.2022</time
+          >
+        </div>
+
+        <h1 class="custom-slider__title">
+          ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების სამელიორაციო
+          ინფრასტრუქტურული პროექტები დაიწყება
+        </h1>
+        <!-- slider navigation buttons  -->
+        <div class="custom-slider__navigation">
+          <div
+            class="swiper-button-prev custom-slider__button custom-slider__button--prev"
+          ></div>
+          <div class="swiper-pagination-fraction custom-slider__pagination">
+            1/4
+          </div>
+          <div
+            class="swiper-button-next custom-slider__button custom-slider__button--next"
+          ></div>
+        </div>
+      </section>
     </section>
     <!-- section -->
     <section class="cards">
@@ -242,6 +306,9 @@
       <!-- footer content -->
     </footer>
 
+    <!-- swiper-bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- javascript  -->
     <script src="./assets/main.js"></script>
   </body>
 </html>

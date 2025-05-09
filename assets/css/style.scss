@@ -171,4 +171,82 @@ body {
   }
 }
 
+.custom-slider {
+  @include inner-container(1312px);
+  height: 760px;
+  margin-block: 48px 64px;
+  &__image {
+    @include image-style($width: 100%, $height: 100%, $object-fit: cover);
+    border-radius: $radius12;
+  }
+  // Content over slider
+  &__content {
+    position: relative;
+    width: 600px;
+    height: 280px;
+    padding: 32px 24px;
+    position: absolute;
+    z-index: 100;
+    left: 24px;
+    bottom: 24px;
+    border-radius: $radius10;
+    background: $white;
+  }
+  &__category {
+    @include font-style(600, 13px, 18px, -0.08px);
+    color: $primary-color;
+  }
+  &__separator,
+  &__date {
+    @include font-style(400, 13px, 18px, -0.08px);
+    color: $dark-grey;
+  }
+  &__title {
+    @include font-style(600, 24px, 40px, 0.35px);
+    color: $black-color;
+    margin-top: 12px;
+  }
+  // buttons block
+  &__navigation {
+    width: 113px;
+    height: 40px;
+    border-radius: $radius8;
+    padding: 8px;
+    background: $light-grey;
+    @include flex(space-between, center, row, 12px, 12px);
+    position: absolute;
+    bottom: 29px;
+    left: 24px;
+    z-index: 100;
+  }
+  // buttons
+  &__button {
+    width: 24px;
+    height: 24px;
+    color: $dark-grey;
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+  }
+  &__button--prev::after,
+  &__button--next::after {
+    font-size: 14px;
+    font-weight: 900;
+  }
+  &__pagination {
+    @include font-style(600, 16px, 24px, 0.35px);
+    color: $black-color;
+    width: 25px;
+    height: 24px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+// section for cards --------------
+
+// footer ------------------------
+
+// responsive-ის იმპორტი არის ბოლოში და ამის ქვევით არ ვწერთ სტილებს
 @import "./responsive";
