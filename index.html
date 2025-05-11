@@ -1,168 +1,314 @@
 <!-- structure -->
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Swiper-ის სტილები -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- custom stytles -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Random design</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- header -->
     <header class="header">
-        <!-- top part -->
-        <div class="header__top">
-            <!-- social icons -->
-            <ul class="header__social-icons">
-                <li class="header__social-item">
-                    <a class="header__social-link" href="https://facebook.com" target="_blank" rel="noopener">
-                        <img class="header__social-icon" src="./assets/images/header/facebook.svg" alt="Facebook">
-                    </a>
-                </li>
-                <li class="header__social-item">
-                    <a class="header__social-link" href="https://twitter.com" target="_blank" rel="noopener">
-                        <img class="header__social-icon" src="./assets/images/header/twiter.svg" alt="Twitter">
-                    </a>
-                </li>
-                <li class="header__social-item">
-                    <a class="header__social-link" href="https://instagram.com" target="_blank" rel="noopener">
-                        <img class="header__social-icon" src="./assets/images/header/instagram.svg" alt="Instagram">
-                    </a>
-                </li>
-            </ul>
-            <!-- logo  -->
-            <a href="index.html" class="header__logo">Company Logo</a>
-            <!-- search & burger -->
-            <div class="header__controls">
-                <form class="header__search" method="GET">
-                    <input type="search" class="header__search-input" name="search" placeholder="ძიება...">
-                    <button type="submit" class="header__search-button">
-                        <img src="./assets/images/header/big-search.svg" alt="Search"
-                            class="header__search-icon--desktop">
-                        <!-- header__search-icon--mobile -->
-                        <img src="./assets/images/header/small-search.svg" alt="Search"
-                            class="header__search-icon--mobile">
-                    </button>
-                </form>
-                <!-- header burger button  -->
-                <button class="header__burger-button" id="burger">
-                    <img src="./assets/images/header/menu.svg" alt="burger-menu" class="header__burger-image">
-                </button>
-            </div>
+      <!-- top part -->
+      <div class="header__top">
+        <!-- social icons -->
+        <ul class="header__social-icons">
+          <li class="header__social-item">
+            <a
+              class="header__social-link"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                class="header__social-icon"
+                src="./assets/images/header/facebook.svg"
+                alt="Facebook"
+              />
+            </a>
+          </li>
+          <li class="header__social-item">
+            <a
+              class="header__social-link"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                class="header__social-icon"
+                src="./assets/images/header/twiter.svg"
+                alt="Twitter"
+              />
+            </a>
+          </li>
+          <li class="header__social-item">
+            <a
+              class="header__social-link"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                class="header__social-icon"
+                src="./assets/images/header/instagram.svg"
+                alt="Instagram"
+              />
+            </a>
+          </li>
+        </ul>
+        <!-- logo  -->
+        <a href="index.html" class="header__logo">Company Logo</a>
+        <!-- search & burger -->
+        <div class="header__controls">
+          <form class="header__search" method="GET">
+            <input
+              type="search"
+              class="header__search-input"
+              name="search"
+              placeholder="ძიება..."
+            />
+            <button type="submit" class="header__search-button">
+              <img
+                src="./assets/images/header/big-search.svg"
+                alt="Search"
+                class="header__search-icon--desktop"
+              />
+              <!-- header__search-icon--mobile -->
+              <img
+                src="./assets/images/header/small-search.svg"
+                alt="Search"
+                class="header__search-icon--mobile"
+              />
+            </button>
+          </form>
+          <!-- header burger button  -->
+          <button class="header__burger-button" id="burger">
+            <img
+              src="./assets/images/header/menu.svg"
+              alt="burger-menu"
+              class="header__burger-image"
+            />
+          </button>
         </div>
-        <!-- bottom part - navigation -->
-        <div class="header__bottom">
-            <nav class="header__nav">
-                <ul class="header__nav-ul">
-                    <!-- ჩვეულებრივი მენიუ -->
-                    <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">პოლიტიკა</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">საზოგადოება</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Covid-19</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">სამართალი</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">ბიზნესი & ეკონომიკა</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">კრიმინალი</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">შემთხვევა</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">მსოფლიო</a>
-                    </li>
-                    <!-- dropdown ღილაკი და submenu -->
-                    <li class="header__nav-item header__nav-item--dropdown">
-                        <!-- dropdown btn -->
-                        <a href="#" class="header__nav-link--active" id="dropdown-btn">
-                            მეტი
-                            <!-- <img src="./assets/images/header/arrow-up.svg" alt="arrow-up"
+      </div>
+      <!-- bottom part - navigation -->
+      <div class="header__bottom">
+        <nav class="header__nav">
+          <ul class="header__nav-ul">
+            <!-- ჩვეულებრივი მენიუ -->
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">პოლიტიკა</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">საზოგადოება</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Covid-19</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">სამართალი</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">ბიზნესი & ეკონომიკა</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">კრიმინალი</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">შემთხვევა</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">მსოფლიო</a>
+            </li>
+            <!-- dropdown ღილაკი და submenu -->
+            <li class="header__nav-item header__nav-item--dropdown">
+              <!-- dropdown btn -->
+              <a href="#" class="header__nav-link--active" id="dropdown-btn">
+                მეტი
+                <!-- <img src="./assets/images/header/arrow-up.svg" alt="arrow-up"
                                 class="header__nav-link--arrow-up"> -->
-                            <img src="./assets/images/header/arrow-down.svg" alt="arrow-down"
-                                class="header__nav-link--arrow-down">
-                        </a>
-                        <ul id="dropdown" class="header__dropdown-content">
-                            <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">სპორტი</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">რელიგია</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">ხელოვნება</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        </section>
+                <img
+                  src="./assets/images/header/arrow-down.svg"
+                  alt="arrow-down"
+                  class="header__nav-link--arrow-down"
+                />
+              </a>
+              <ul id="dropdown" class="header__dropdown-content">
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">სპორტი</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">რელიგია</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">ხელოვნება</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- </section> -->
     </header>
     <!-- slider -->
     <section class="swiper custom-slider">
-        <!-- Swiper wrapper -->
-        <div class="swiper-wrapper custom-slider__wrapper">
-            <!-- Individual slides -->
-            <div class="swiper-slide custom-slider__slide">
-                <img class="custom-slider__image" src="./assets/images/slider/slider1.jpg" alt="slider">
-            </div>
-            <div class="swiper-slide custom-slider__slide">
-                <img class="custom-slider__image" src="./assets/images/slider/slider2.jpg" alt="slider">
-            </div>
-            <div class="swiper-slide custom-slider__slide">
-                <img class="custom-slider__image" src="./assets/images/slider/slider3.jpg" alt="slider">
-            </div>
-            <div class="swiper-slide custom-slider__slide">
-                <img class="custom-slider__image" src="./assets/images/slider/slider4.jpg" alt="slider">
-            </div>
+      <!-- Swiper wrapper -->
+      <div class="swiper-wrapper custom-slider__wrapper">
+        <!-- Individual slides -->
+        <div class="swiper-slide custom-slider__slide">
+          <img
+            class="custom-slider__image"
+            src="./assets/images/slider/slider1.jpg"
+            alt="slider"
+          />
         </div>
-        <!-- Content over slider -->
-        <section class="custom-slider__content">
-            <div class="custom-slider__meta">
-                <span class="custom-slider__category">პოლიტიკა</span>
-                <span class="custom-slider__separator">•</span>
-                <time class="custom-slider__date" datetime="2022-04-18">18.04.2022</time>
-            </div>
+        <div class="swiper-slide custom-slider__slide">
+          <img
+            class="custom-slider__image"
+            src="./assets/images/slider/slider2.jpg"
+            alt="slider"
+          />
+        </div>
+        <div class="swiper-slide custom-slider__slide">
+          <img
+            class="custom-slider__image"
+            src="./assets/images/slider/slider3.jpg"
+            alt="slider"
+          />
+        </div>
+        <div class="swiper-slide custom-slider__slide">
+          <img
+            class="custom-slider__image"
+            src="./assets/images/slider/slider4.jpg"
+            alt="slider"
+          />
+        </div>
+      </div>
+      <!-- Content over slider -->
+      <section class="custom-slider__content">
+        <div class="custom-slider__meta">
+          <span class="custom-slider__category">პოლიტიკა</span>
+          <span class="custom-slider__separator">•</span>
+          <time class="custom-slider__date" datetime="2022-04-18"
+            >18.04.2022</time
+          >
+        </div>
 
-            <h1 class="custom-slider__title">
-                ქვემო ქართლის რეგიონში 20 მლნ ლარამდე
-                ღირებულების სამელიორაციო
-                ინფრასტრუქტურული პროექტები დაიწყება
-            </h1>
-            <!-- slider navigation buttons  -->
-            <div class="custom-slider__navigation">
-                <div class="swiper-button-prev custom-slider__button custom-slider__button--prev"></div>
-                <div class="swiper-pagination-fraction custom-slider__pagination">1/4</div>
-                <div class="swiper-button-next custom-slider__button custom-slider__button--next"></div>
-            </div>
-        </section>
+        <h1 class="custom-slider__title">
+          ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების სამელიორაციო
+          ინფრასტრუქტურული პროექტები დაიწყება
+        </h1>
+        <!-- slider navigation buttons  -->
+        <div class="custom-slider__navigation">
+          <div
+            class="swiper-button-prev custom-slider__button custom-slider__button--prev"
+          ></div>
+          <div class="swiper-pagination-fraction custom-slider__pagination">
+            1/4
+          </div>
+          <div
+            class="swiper-button-next custom-slider__button custom-slider__button--next"
+          ></div>
+        </div>
+      </section>
     </section>
     <!-- section -->
     <section class="cards">
-        <!-- section content -->
+      <!-- section content -->
+      <div class="cards__moon">
+        <img
+          class="cards__images"
+          src="./assets/images/section/moon.jpg"
+          alt=""
+        />
+        <div class="cards__post post-cards">
+          <span class="category-card">პოლიტიკა</span>
+          <span class="separator-card">•</span>
+          <time datetime="2023-04-18">18.04.2023</time>
+        </div>
+        <p class="paragraphs-cards">
+          კიმ ჩენ ინი აშშ-სა და სამხრეთ კორეას ბირთვული იარაღით ემუქრება
+        </p>
+      </div>
+      <div class="cards__nuclear">
+        <img
+          class="cards__images cards__nuclear--img"
+          src="./assets/images/section/nuclear-attack.jpg"
+          alt=""
+        />
+        <p class="cards__nuclear--paragraph">
+          ჩრდილოეთ კორეამ აშშ-სა და სამხრეთ კორეის წინააღმდეგ იმიტირებული
+          ბირთვული კონტრშეტევა დაიწყო
+        </p>
+        <div class="cards__nuclear__post">
+          <span class="cards__nuclear__post--news">ახალი ამბები</span>
+          <time class="cards__nuclear__post--newsdate" datetime="2023-04-18"
+            >18.04.2023</time
+          >
+        </div>
+      </div>
+      <div class="cards__cancer">
+        <img
+          class="cards__images"
+          src="./assets/images/section/cancer.jpg"
+          alt=""
+        />
+        <div class="cards__post post-cards">
+          <span class="category-card">პოლიტიკა</span>
+          <span class="separator-card">•</span>
+          <time datetime="2023-04-18">18.04.2023</time>
+        </div>
+        <p class="paragraphs-cards">
+          დღეს კიბოს სკრინინგის მხარდასაჭერი კონცერტი გაიმართება
+        </p>
+      </div>
+      <div class="cards__clock">
+        <img
+          class="cards__images"
+          src="./assets/images/section/wall-clock.jpg"
+          alt=""
+        />
+        <div class="cards__post post-cards">
+          <span class="category-card">პოლიტიკა</span>
+          <span class="separator-card">•</span>
+          <time datetime="2023-04-18">18.04.2023</time>
+        </div>
+        <p class="paragraphs-cards">
+          საქართველოს მორაგბეთა ნაკრები „რაგბი ევროპის“ გამარჯვებულია
+        </p>
+      </div>
+      <div class="cards__key">
+        <img
+          class="cards__images"
+          src="./assets/images/section/key-box.jpg"
+          alt=""
+        />
+        <div class="cards__post post-cards">
+          <span class="category-card">პოლიტიკა</span>
+          <span class="separator-card">•</span>
+          <time datetime="2023-04-18">18.04.2023</time>
+        </div>
+        <p class="paragraphs-cards">
+          უკრაინას დიდი კონტრშეტევისთვის მხოლოდ ერთი მცდელობა ექნება
+        </p>
+      </div>
     </section>
     <!-- footer -->
     <footer class="footer">
-        <!-- footer content -->
+      <!-- footer content -->
     </footer>
 
     <!-- swiper-bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- javascript  -->
     <script src="./assets/main.js"></script>
-</body>
-
+  </body>
 </html>
