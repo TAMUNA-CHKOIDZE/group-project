@@ -122,7 +122,7 @@ body {
     border-radius: $radius12;
   }
 
-  .post-cards {
+  &__post {
     @include font-style(400, 12px, 18px, 0.2px);
     color: $dark-grey;
     margin: 16px 12px 8px 12px;
